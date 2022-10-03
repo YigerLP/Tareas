@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Información de Animales</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav-link logo">InfoWild</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="ejemplo7.html" class="nav-link nav-menu-link">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a href="leon.html" class="nav-link nav-menu-link">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a href="videos.html" class="nav-link nav-menu-link">Videos</a></li>
+                    <li class="nav-menu-item"><a href="iframe.html" class="nav-link nav-menu-link">Información externa</a></li>
+                    <li class="nav-menu-item"><a href="formulario.html" class="nav-link nav-menu-link">Formulario</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="seccion">
+            <h2>Información de Registro</h2>
+            
+            <h3>Registrate como colaborador en nuestro sistema para tomarte en cuenta en nuestras aventuras</h3>
+            
+            <form action="registro.jsp" method="POST" style="margin:25px;">
+                <input type="hidden" name="idCliente" value="123456789" />
+                
+                <label>Nombre completo:</label>
+                <input type="text" name="nombre" placeholder="Nombre Completo" /><br /><br/>
+                
+                <label>Correo:</label>
+                <input type="email" name="correo" placeholder="Correo Electrónico" /><br /><br/>
+                
+                <label>Clima(s) Favorito:</label><br/>
+                Árido: <input type="checkbox" name="arid" />
+                Tropical: <input type="checkbox" name="tropical" />
+                Invernal: <input type="checkbox" name="winter" /><br /><br/>
+                
+                <label>Foto:</label>
+                <input type="file" name="foto" /><br /><br/>
+                
+                <label>Edad</label>
+                <input type="number" name="edad" min="18" max="35" placeholder="Edad" /><br /><br/>
+                
+                <label>Talla de Camisa:</label>
+                S <input type="radio" name="color" value="S" />
+                M <input type="radio" name="color" value="M" />
+                L <input type="radio" name="color" value="L" />
+                XL <input type="radio" name="color" value="XL" />
+                XLL <input type="radio" name="color" value="XLL" /><br /><br/>
+                
+                <label>Clave de ingreso:</label>
+                <input type="password" name="clave" placeholder="*****************" /><br /><br/>
+                
+                <br /><br/>
+                
+                <input type="submit" name="Enviar" value="Registrar" />
+            </form>
+        </section>
+        <a href="mailto:clientes@rba.es">Contacto National Geographic</a><br />
+        <a href="telto:902392391">Contacto 902 392 391</a>
+    </body>
+</html>

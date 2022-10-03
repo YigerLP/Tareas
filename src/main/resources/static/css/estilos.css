@@ -1,0 +1,22 @@
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+article{
+    text-align: center;
+}
+
+article header{
+    text-align: center;
+    background-color: #636940;
+    color: black;
+    margin: 25px;
+}
+
+.seccion{
+    align-content: center;
+    text-align: center;
+    margin: 50px;
+}
